@@ -11,12 +11,17 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Determine the basename for routing
+// In development (when vite dev server is running), no basename
+// In production build for GitHub Pages, use /Portfolio
+const basename = import.meta.env.VITE_BASE_PATH || '';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
