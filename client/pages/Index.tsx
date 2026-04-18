@@ -145,18 +145,18 @@ export default function Index() {
                 <p className="text-sm leading-relaxed">
                   Passionate computer science student with hands-on experience in cybersecurity, software engineering, and data science. I've completed internships at leading organizations including Orange, Siemens, Plastic Bank, and Arab African International Bank.
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground/90">
                   Top 2% globally on TryHackMe • Codeforces Specialist
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
+                    <span className="text-muted-foreground w-20">Nationality</span>
                     <Badge variant="outline" className="border-white/10">Swedish</Badge>
-                    <span className="text-muted-foreground">Nationality</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
+                    <span className="text-muted-foreground w-20">Languages</span>
                     <Badge variant="outline" className="border-white/10">English</Badge>
                     <Badge variant="outline" className="border-white/10">Arabic</Badge>
-                    <span className="text-muted-foreground">Languages</span>
                   </div>
                 </div>
               </CardContent>
@@ -174,8 +174,8 @@ export default function Index() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src={assetUrl("images/logos/aaib.jpg")} alt="AAIB" className="w-full h-full object-contain" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg border border-white/10 bg-white/90 overflow-hidden flex items-center justify-center">
+                      <img src={assetUrl("images/logos/aaib.jpg")} alt="AAIB" className="w-full h-full object-contain scale-110" />
                     </div>
                     <div>
                       <CardTitle>Network Security Intern</CardTitle>
@@ -217,8 +217,8 @@ export default function Index() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src={assetUrl("images/logos/orange.png")} alt="Orange" className="w-full h-full object-contain" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg border border-white/10 bg-white/90 overflow-hidden flex items-center justify-center">
+                      <img src={assetUrl("images/logos/orange.png")} alt="Orange" className="w-full h-full object-contain scale-110" />
                     </div>
                     <div>
                       <CardTitle>Cyber Security Operations Intern</CardTitle>
@@ -259,8 +259,8 @@ export default function Index() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src={assetUrl("images/logos/siemens.png")} alt="Siemens" className="w-full h-full object-contain" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg border border-white/10 bg-white/90 overflow-hidden flex items-center justify-center">
+                      <img src={assetUrl("images/logos/siemens.png")} alt="Siemens" className="w-full h-full object-contain scale-110" />
                     </div>
                     <div>
                       <CardTitle>Software Engineering Intern</CardTitle>
@@ -301,8 +301,8 @@ export default function Index() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src={assetUrl("images/logos/plastic-bank.jpg")} alt="Plastic Bank" className="w-full h-full object-contain" />
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg border border-white/10 bg-white/90 overflow-hidden flex items-center justify-center">
+                      <img src={assetUrl("images/logos/plastic-bank.jpg")} alt="Plastic Bank" className="w-full h-full object-contain scale-110" />
                     </div>
                     <div>
                       <CardTitle>Data Science Intern</CardTitle>
@@ -373,17 +373,18 @@ export default function Index() {
                 <Card className={`glass-card border-${cert.color}/20 hover:border-${cert.color}/50 transition-all group hover-lift fade-in-section cursor-pointer`}>
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between mb-2">
-                      <div className="w-12 h-12 bg-white/90 rounded-lg flex items-center justify-center group-hover:bg-white transition-all p-1.5 overflow-hidden">
+                      <div className="w-12 h-12 md:w-14 md:h-14 bg-white/90 rounded-lg flex items-center justify-center group-hover:bg-white transition-all p-1 overflow-hidden">
                         {cert.image ? (
                           <img
                             src={cert.image.startsWith("http") ? cert.image : assetUrl(cert.image)}
                             alt={cert.name}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain scale-110"
                           />
                         ) : (
                           <Award className={`w-6 h-6 text-${cert.color}`} />
                         )}
                       </div>
+                      
                       <div className={`w-6 h-6 bg-${cert.color}/10 rounded-full flex items-center justify-center group-hover:bg-${cert.color}/20 transition-all`}>
                         <ExternalLink className={`w-3 h-3 text-${cert.color}`} />
                       </div>
@@ -601,7 +602,7 @@ export default function Index() {
           <p className="text-lg text-muted-foreground mb-8 fade-in-section">
             I'm always open to discussing new opportunities, projects, or collaborations.
           </p>
-          <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Card className="glass-card border-white/10 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/50 transition-all hover-lift fade-in-section">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -610,7 +611,7 @@ export default function Index() {
                 <CardTitle className="text-base">Email</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:youssef.amr.anter@gmail.com" className="text-sm text-primary hover:underline">
+                <a href="mailto:youssef.amr.anter@gmail.com" className="text-sm text-foreground hover:underline whitespace-nowrap">
                   youssef.amr.anter@gmail.com
                 </a>
               </CardContent>
@@ -624,7 +625,7 @@ export default function Index() {
                 <CardTitle className="text-base">Phone</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+491723518751" className="text-sm text-accent hover:underline">
+                <a href="tel:+491723518751" className="text-sm text-foreground hover:underline whitespace-nowrap">
                   +49 1723518751
                 </a>
               </CardContent>
@@ -638,7 +639,7 @@ export default function Index() {
                 <CardTitle className="text-base">Location</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm">Berlin, Germany</p>
+                <p className="text-sm text-foreground whitespace-nowrap">Berlin, Germany</p>
               </CardContent>
             </Card>
           </div>
