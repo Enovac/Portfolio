@@ -6,23 +6,13 @@ A modern React portfolio application built with Vite, TypeScript, and TailwindCS
 
 This project is configured for automatic deployment to GitHub Pages. Here's how to set it up:
 
-### Automatic Deployment (Recommended)
+### Enable GitHub Pages
 
-1. **Push your code to GitHub**:
-   ```bash
-   git add .
-   git commit -m "Configure for GitHub Pages"
-   git push origin main
-   ```
-
-2. **Enable GitHub Pages**:
-   - Go to your repository settings on GitHub
-   - Navigate to "Pages" in the left sidebar
-   - Under "Source", select "GitHub Actions"
-   - The workflow will automatically deploy your site when you push to main
-
-3. **Access your site**:
-   Your site will be available at: `https://[username].github.io/Portfolio/`
+1. Push the repo to GitHub.
+2. In GitHub repo settings → **Pages**:
+   - **Build and deployment**: select **Deploy from a branch**
+   - **Branch**: select `gh-pages` / `(root)`
+3. Your site will be available at: `https://[username].github.io/Portfolio/`
 
 ### Manual Deployment
 
@@ -68,15 +58,12 @@ The development server will run on `http://localhost:8080`
 ### Project Structure
 
 - `client/` - React frontend application
-- `server/` - Express backend (not used in GitHub Pages deployment)
-- `shared/` - Shared TypeScript types
 - `public/` - Static assets
 
 ### Configuration Files
 
 - `vite.config.ts` - Main Vite configuration for development
 - `vite.config.pages.ts` - GitHub Pages specific configuration
-- `.github/workflows/deploy.yml` - GitHub Actions deployment workflow
 
 ## Tech Stack
 

@@ -7,22 +7,36 @@
     <script>
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
-      // This script redirects URLs with query parameters to the root
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      //
+      // This 404.html is served by GitHub Pages for unknown routes.
+      // Redirect to index.html with the original route encoded.
+      (function (l) {
+        var pathSegmentsToKeep = 1; // 1 for repo pages: https://<user>.github.io/<repo>/
+
+        l.replace(
+          l.protocol +
+            "//" +
+            l.host +
+            l.pathname
+              .split("/")
+              .slice(0, 1 + pathSegmentsToKeep)
+              .join("/") +
+            "/?/" +
+            l.pathname
+              .split("/")
+              .slice(1 + pathSegmentsToKeep)
+              .join("/")
+              .replace(/&/g, "~and~") +
+            (l.search
+              ? "&" + l.search.slice(1).replace(/&/g, "~and~")
+              : "") +
+            l.hash,
+        );
+      })(window.location);
     </script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/client/App.tsx"></script>
+    <p>Redirecting...</p>
   </body>
 </html>
