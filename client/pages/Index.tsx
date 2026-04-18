@@ -85,13 +85,13 @@ export default function Index() {
                 Get In Touch
               </Button>
               <Button size="lg" variant="outline" asChild className="border-white/10 hover:bg-white/5 shimmer hover:scale-105 transition-transform">
-                <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <a href="https://github.com/Enovac" target="_blank" rel="noopener noreferrer" className="gap-2">
                   <Github className="w-4 h-4" />
                   GitHub
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="border-white/10 hover:bg-white/5 shimmer hover:scale-105 transition-transform">
-                <a href="https://linkedin.com/in/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <a href="https://www.linkedin.com/in/youssef-abdelrahman-91a3a72a0" target="_blank" rel="noopener noreferrer" className="gap-2">
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
                 </a>
@@ -168,9 +168,14 @@ export default function Index() {
             <Card className="glass-card border-l-4 border-l-primary border-t border-r border-b border-white/10 hover:shadow-xl hover:shadow-primary/10 transition-all hover-lift fade-in-section">
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Network Security Intern</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Arab African International Bank (AAIB)</CardDescription>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
+                      <img src="/images/logos/aaib.jpg" alt="AAIB" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <CardTitle>Network Security Intern</CardTitle>
+                      <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Arab African International Bank (AAIB)</CardDescription>
+                    </div>
                   </div>
                   <Badge className="bg-white/5 border-white/10">Sep – Oct 2025</Badge>
                 </div>
@@ -206,9 +211,14 @@ export default function Index() {
             <Card className="glass-card border-l-4 border-l-accent border-t border-r border-b border-white/10 hover:shadow-xl hover:shadow-accent/10 transition-all hover-lift fade-in-section">
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Cyber Security Operations Intern</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Orange</CardDescription>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
+                      <img src="/images/logos/orange.png" alt="Orange" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <CardTitle>Cyber Security Operations Intern</CardTitle>
+                      <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Orange</CardDescription>
+                    </div>
                   </div>
                   <Badge className="bg-white/5 border-white/10">Aug – Sep 2025</Badge>
                 </div>
@@ -243,9 +253,14 @@ export default function Index() {
             <Card className="glass-card border-l-4 border-l-primary border-t border-r border-b border-white/10 hover:shadow-xl hover:shadow-primary/10 transition-all hover-lift fade-in-section">
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Software Engineering Intern</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Siemens</CardDescription>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
+                      <img src="/images/logos/siemens.png" alt="Siemens" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <CardTitle>Software Engineering Intern</CardTitle>
+                      <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Siemens</CardDescription>
+                    </div>
                   </div>
                   <Badge className="bg-white/5 border-white/10">Jan – Feb 2025</Badge>
                 </div>
@@ -280,9 +295,14 @@ export default function Index() {
             <Card className="glass-card border-l-4 border-l-accent border-t border-r border-b border-white/10 hover:shadow-xl hover:shadow-accent/10 transition-all hover-lift fade-in-section">
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle>Data Science Intern</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Plastic Bank</CardDescription>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
+                      <img src="/images/logos/plastic-bank.jpg" alt="Plastic Bank" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <CardTitle>Data Science Intern</CardTitle>
+                      <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Plastic Bank</CardDescription>
+                    </div>
                   </div>
                   <Badge className="bg-white/5 border-white/10">Jul – Sep 2024</Badge>
                 </div>
@@ -322,26 +342,26 @@ export default function Index() {
               {
                 name: "CompTIA Security+ (SY0-701)",
                 color: "primary",
-                image: "https://images.credly.com/size/680x680/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png",
-                link: "https://www.comptia.org/certifications/security"
+                image: "/images/certs/comptia-securityplus.png",
+                link: "https://www.credly.com/badges/787476cb-32c2-4710-9f39-2cbb2dc75093/public_url"
               },
               {
                 name: "Google Cybersecurity Professional Certificate",
                 color: "accent",
-                image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/fb/e4e1b0bbf04903b58b09afa6c7ba21/1080x1080_GCC-Logo.png",
-                link: "https://www.coursera.org/professional-certificates/google-cybersecurity"
+                image: "/images/certs/google-cybersecurity.png",
+                link: "https://www.credly.com/badges/24b2d9b3-2cdb-4dec-b38b-313ba0f20fd8/public_url"
               },
               {
                 name: "Google IT Support Professional Certificate",
                 color: "primary",
-                image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/92/e8c670402211e8a594f1e800c7be75/1080x1080.png",
-                link: "https://www.coursera.org/professional-certificates/google-it-support"
+                image: "/images/certs/google-it.png",
+                link: "https://www.credly.com/badges/87a8663a-8a9c-4f98-bea0-f9c617864fb7/public_url"
               },
               {
                 name: "AWS Cloud Solutions Architect Professional Certificate",
                 color: "accent",
-                image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.69d82ff1b2861e1089539d1a0c0e14f8e0f42d5b.png",
-                link: "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+                image: "/images/certs/aws.png",
+                link: "https://coursera.org/share/b90a6b79f6a7e4dc35d1e268e76389f5"
               }
             ].map((cert, idx) => (
               <a key={idx} href={cert.link} target="_blank" rel="noopener noreferrer" className="block">
@@ -479,7 +499,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text fade-in-section">Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://github.com/Enovac/PhishNet" target="_blank" rel="noopener noreferrer" className="block">
               <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-accent/20 hover:border-accent/50 transition-all group hover-lift fade-in-section cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -508,7 +528,7 @@ export default function Index() {
               </Card>
             </a>
 
-            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://github.com/Enovac/AES-Assembly-Project" target="_blank" rel="noopener noreferrer" className="block">
               <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all group hover-lift fade-in-section cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -537,7 +557,7 @@ export default function Index() {
               </Card>
             </a>
 
-            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://github.com/Enovac/Google-Cybersecurity-Projects" target="_blank" rel="noopener noreferrer" className="block">
               <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all group hover-lift fade-in-section cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -629,7 +649,7 @@ export default function Index() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com/youssefabdelrahman"
+                href="https://github.com/Enovac"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -637,7 +657,7 @@ export default function Index() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/youssefabdelrahman"
+                href="https://www.linkedin.com/in/youssef-abdelrahman-91a3a72a0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
