@@ -77,7 +77,7 @@ export default function Index() {
               <span className="text-foreground" style={{animation: 'slide-up 0.8s ease-out 0.4s both'}}>ABDELRAHMAN</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto" style={{animation: 'slide-up 0.8s ease-out 0.6s both'}}>
-              Computer Science Student | Cybersecurity Enthusiast | Software Engineer
+              Computer Science Student | Cybersecurity Enthusiast
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 pt-4" style={{animation: 'slide-up 0.8s ease-out 0.8s both'}}>
               <Button size="lg" onClick={() => scrollToSection('contact')} className="gap-2 bg-primary hover:bg-primary/90 glow-effect hover:scale-105 transition-transform">
@@ -115,16 +115,16 @@ export default function Index() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-lg">BSc in Computer Science and Engineering</h3>
+                  <h3 className="font-semibold text-lg">B.Sc. in Media Engineering and Technology</h3>
+                  <p className="text-sm text-muted-foreground">Computer Science and Engineering track</p>
                   <p className="text-sm text-muted-foreground">German International University in Berlin (GIU Berlin)</p>
-                  <p className="text-sm text-muted-foreground">2022 – 2026</p>
                   <div className="mt-2">
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">GPA: 4.0/4.0</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">GPA: 0.84/0.7</Badge>
                     <Badge variant="secondary" className="ml-2 bg-white/5 border-white/10">Full Scholarship</Badge>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Top-ranking student with expertise in Databases, Data Structures, Algorithms, Operating Systems, Networks, and Software Engineering.
+                  Top ranking student.
                 </p>
               </CardContent>
             </Card>
@@ -138,7 +138,10 @@ export default function Index() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm leading-relaxed">
-                  Passionate computer science student with hands-on experience in cybersecurity, software engineering, and data science. I've completed internships at leading organizations including Orange, Siemens, and Plastic Bank.
+                  Passionate computer science student with hands-on experience in cybersecurity, software engineering, and data science. I've completed internships at leading organizations including Orange, Siemens, Plastic Bank, and Arab African International Bank.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Top 2% globally on TryHackMe • Codeforces Specialist
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
@@ -166,19 +169,36 @@ export default function Index() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle>Information Technology Intern</CardTitle>
+                    <CardTitle>Network Security Intern</CardTitle>
                     <CardDescription className="text-base font-semibold text-foreground/80 mt-1">Arab African International Bank (AAIB)</CardDescription>
                   </div>
                   <Badge className="bg-white/5 border-white/10">Sep – Oct 2025</Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Gained practical experience in information technology operations and systems at a leading financial institution.
-                </p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Applied CCNA concepts by configuring simulated networks in Cisco Packet Tracer (routing, switching, subnetting, VLANs, ACLs)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Analyzed network traffic and security policies using Palo Alto Networks firewalls</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Worked with GoAnywhere secure file transfer concepts focused on automation and secure data movement</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Performed virtualization tasks using VMware and Hyper-V (VM deployment, storage management, snapshotting)</span>
+                  </li>
+                </ul>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary" className="bg-white/5 border-white/10">IT Operations</Badge>
-                  <Badge variant="secondary" className="bg-white/5 border-white/10">Banking Systems</Badge>
+                  <Badge variant="secondary" className="bg-white/5 border-white/10">CCNA</Badge>
+                  <Badge variant="secondary" className="bg-white/5 border-white/10">Palo Alto</Badge>
+                  <Badge variant="secondary" className="bg-white/5 border-white/10">VMware</Badge>
+                  <Badge variant="secondary" className="bg-white/5 border-white/10">Hyper-V</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -197,19 +217,19 @@ export default function Index() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Trained with Information Security team on Nessus vulnerability scanner, TippingPoint IPS, and Cisco Mail Gateway</span>
+                    <span>Trained with the Information Security team on Nessus vulnerability scanner, TippingPoint IPS, and Cisco Mail Gateway</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Completed practical labs and CTF challenges with Penetration Testing team</span>
+                    <span>Conducted network and web application penetration testing in labs and CTFs, applying OWASP Top 10 techniques</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Practiced network and web application pentesting using Nmap, Wireshark, Burp Suite, Hydra, and Metasploit</span>
+                    <span>Used tools including Nmap, Wireshark, Burp Suite, Metasploit, Sublist3r, ffuf, Hashcat, John the Ripper, and Netcat</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Performed Android application pentesting using ADB, Jadx, Apktool, Frida, and MOBSF</span>
+                    <span>Wrote Bash scripts to automate tasks during penetration testing exercises</span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -234,19 +254,19 @@ export default function Index() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Built HR management app in Power Apps with role-based HR and Employee views</span>
+                    <span>Built a Power Apps solution for HR workflows implementing role-based access control (RBAC) for HR and employee users</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Integrated SharePoint backend and Power BI for real-time dashboards and analytics</span>
+                    <span>Integrated SharePoint as the backend database and Power BI for real-time dashboards and analytics</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Automated workflows with Power Automate for Excel uploads, emails, and task reminders</span>
+                    <span>Implemented automated workflows using Power Automate, including Excel uploads to SharePoint and personalized/reminder emails</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <span>Implemented task submission and approval flow with manager Outlook integration</span>
+                    <span>Implemented task submission with routing to managers for Outlook-based approval</span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -271,15 +291,15 @@ export default function Index() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Gained hands-on experience with PostgreSQL for efficient data querying and extraction</span>
+                    <span>Extracted and processed data from PostgreSQL to prepare datasets for analysis and visualization</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Developed Power BI dashboards analyzing Indonesia data with insights and KPIs</span>
+                    <span>Analyzed Indonesia data using Power BI to generate insights, visualize trends, and deliver key performance metrics</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Created C++ script automating PostgreSQL data extraction with multilingual name processing</span>
+                    <span>Developed a C++ script to normalize multilingual names, validate entries, and detect redundant accounts indicative of anomalies</span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -303,37 +323,25 @@ export default function Index() {
                 name: "CompTIA Security+ (SY0-701)",
                 color: "primary",
                 image: "https://images.credly.com/size/680x680/images/74790a75-8451-400a-8536-92d792c5184a/CompTIA_Security_2Bce.png",
-                link: "#"
+                link: "https://www.comptia.org/certifications/security"
               },
               {
-                name: "Google Cybersecurity Professional",
+                name: "Google Cybersecurity Professional Certificate",
                 color: "accent",
                 image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/fb/e4e1b0bbf04903b58b09afa6c7ba21/1080x1080_GCC-Logo.png",
-                link: "#"
+                link: "https://www.coursera.org/professional-certificates/google-cybersecurity"
               },
               {
-                name: "Google IT Support Professional",
+                name: "Google IT Support Professional Certificate",
                 color: "primary",
                 image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/92/e8c670402211e8a594f1e800c7be75/1080x1080.png",
-                link: "#"
+                link: "https://www.coursera.org/professional-certificates/google-it-support"
               },
               {
-                name: "AWS Cloud Solutions Architect",
+                name: "AWS Cloud Solutions Architect Professional Certificate",
                 color: "accent",
                 image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.69d82ff1b2861e1089539d1a0c0e14f8e0f42d5b.png",
-                link: "#"
-              },
-              {
-                name: "AWS Fundamentals Specialization",
-                color: "primary",
-                image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/6b/cf8b80cf4e11e8a95c79ea2e9f0e94/AWS-Fundamentals-Specialization_LOGO.png",
-                link: "#"
-              },
-              {
-                name: "Meta Backend Developer Professional",
-                color: "accent",
-                image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/a4/46b8e19e8448699be7c29dc6e55c6f/Meta-Logo-Blue.png",
-                link: "#"
+                link: "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
               }
             ].map((cert, idx) => (
               <a key={idx} href={cert.link} target="_blank" rel="noopener noreferrer" className="block">
@@ -371,74 +379,79 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="glass-card border-white/10 hover:border-primary/30 transition-all hover-lift fade-in-section">
               <CardHeader>
-                <CardTitle className="text-lg">Programming Languages</CardTitle>
+                <CardTitle className="text-lg">Programming & Tools</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.1s both'}}>C</Badge>
+                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.1s both'}}>Python</Badge>
                   <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.2s both'}}>C++</Badge>
                   <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.3s both'}}>Java</Badge>
-                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.4s both'}}>Python</Badge>
-                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.5s both'}}>JavaScript</Badge>
+                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.4s both'}}>Bash</Badge>
+                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.5s both'}}>Git</Badge>
+                  <Badge className="bg-primary/20 border-primary/30 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-default" style={{animation: 'bounce-in 0.5s ease-out 0.6s both'}}>Jira</Badge>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="glass-card border-white/10 hover:border-accent/30 transition-all hover-lift fade-in-section">
               <CardHeader>
-                <CardTitle className="text-lg">Web & Databases</CardTitle>
+                <CardTitle className="text-lg">Web Development</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge className="bg-accent/20 border-accent/30">PostgreSQL</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Django</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Bootstrap</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">SharePoint</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">MongoDB</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Express</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">React</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Node.js</Badge>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="glass-card border-white/10 hover:border-primary/30 transition-all hover-lift fade-in-section">
               <CardHeader>
-                <CardTitle className="text-lg">Microsoft Platform</CardTitle>
+                <CardTitle className="text-lg">Power Platform</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-primary/20 border-primary/30">Excel</Badge>
                   <Badge className="bg-primary/20 border-primary/30">Power Apps</Badge>
-                  <Badge className="bg-primary/20 border-primary/30">Power BI</Badge>
                   <Badge className="bg-primary/20 border-primary/30">Power Automate</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">SharePoint</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">Power BI</Badge>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="glass-card border-white/10 hover:border-accent/30 transition-all hover-lift fade-in-section">
               <CardHeader>
-                <CardTitle className="text-lg">Cybersecurity Tools</CardTitle>
+                <CardTitle className="text-lg">Pentest Tools</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-accent/20 border-accent/30">Suricata</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Wireshark</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Linux</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Splunk</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Burpsuite</Badge>
                   <Badge className="bg-accent/20 border-accent/30">Nmap</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Wireshark</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Burp Suite</Badge>
                   <Badge className="bg-accent/20 border-accent/30">Metasploit</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">SQLMap</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">ffuf</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Hydra</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Hashcat</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">John the Ripper</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Netcat</Badge>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="glass-card border-white/10 hover:border-primary/30 transition-all hover-lift fade-in-section">
               <CardHeader>
-                <CardTitle className="text-lg">Version Control</CardTitle>
+                <CardTitle className="text-lg">Security Operations</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-primary/20 border-primary/30">Git</Badge>
-                  <Badge className="bg-primary/20 border-primary/30">GitHub</Badge>
-                  <Badge className="bg-primary/20 border-primary/30">Jira</Badge>
-                  <Badge className="bg-primary/20 border-primary/30">Figma</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">Nessus</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">TippingPoint IPS</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">Cisco Mail Gateway</Badge>
+                  <Badge className="bg-primary/20 border-primary/30">Palo Alto</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -450,7 +463,10 @@ export default function Index() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge className="bg-accent/20 border-accent/30">AWS</Badge>
-                  <Badge className="bg-accent/20 border-accent/30">Cloud Architecture</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Linux</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Windows</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">VMware</Badge>
+                  <Badge className="bg-accent/20 border-accent/30">Hyper-V</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -463,36 +479,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text fade-in-section">Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="block">
-              <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all group hover-lift fade-in-section cursor-pointer">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-all">
-                      <Code className="w-6 h-6 text-primary" />
-                    </div>
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all">
-                      <ExternalLink className="w-4 h-4 text-primary" />
-                    </div>
-                  </div>
-                  <CardTitle>Google Cybersecurity Projects</CardTitle>
-                  <CardDescription>
-                    Comprehensive cybersecurity practice projects
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Practicing vulnerability assessments, incident reports, AAA Framework, NIST CSF, and more.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">Security</Badge>
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">NIST</Badge>
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">Compliance</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            </a>
-
-            <a href="#" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
               <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-accent/20 hover:border-accent/50 transition-all group hover-lift fade-in-section cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -503,25 +490,25 @@ export default function Index() {
                       <ExternalLink className="w-4 h-4 text-accent" />
                     </div>
                   </div>
-                  <CardTitle>Cadabra E-Commerce App</CardTitle>
+                  <CardTitle>PhishNet</CardTitle>
                   <CardDescription>
-                    Desktop e-commerce application
+                    AI-Based Phishing Detection Platform
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Developed using Java OOP and JavaFX with layered architecture (Entity → Database → DAO → Service → GUI).
+                    Built using the MERN stack and FastAPI. Integrated Gmail API parsing and a Logistic Regression + TF-IDF model trained on an 80,000-email dataset, with SPF/DKIM/DMARC header analysis, secure JWT auth, and a LLaMA-powered chatbot to explain results.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">Java</Badge>
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">JavaFX</Badge>
-                    <Badge variant="secondary" className="bg-white/5 border-white/10">OOP</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">MERN</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">FastAPI</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">ML</Badge>
                   </div>
                 </CardContent>
               </Card>
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
               <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all group hover-lift fade-in-section cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -549,6 +536,35 @@ export default function Index() {
                 </CardContent>
               </Card>
             </a>
+
+            <a href="https://github.com/youssefabdelrahman" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="glass-card border-white/10 hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all group hover-lift fade-in-section cursor-pointer">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-all">
+                      <Code className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all">
+                      <ExternalLink className="w-4 h-4 text-primary" />
+                    </div>
+                  </div>
+                  <CardTitle>Google Cybersecurity Projects</CardTitle>
+                  <CardDescription>
+                    Cybersecurity practice projects
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Practicing vulnerability assessments, incident reports, AAA Framework, NIST CSF, and more.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">Security</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">NIST</Badge>
+                    <Badge variant="secondary" className="bg-white/5 border-white/10">Compliance</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
           </div>
         </div>
       </section>
@@ -569,8 +585,8 @@ export default function Index() {
                 <CardTitle className="text-base">Email</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:unienovac@gmail.com" className="text-sm text-primary hover:underline">
-                  unienovac@gmail.com
+                <a href="mailto:youssef.amr.anter@gmail.com" className="text-sm text-primary hover:underline">
+                  youssef.amr.anter@gmail.com
                 </a>
               </CardContent>
             </Card>
@@ -629,7 +645,7 @@ export default function Index() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:unienovac@gmail.com"
+                href="mailto:youssef.amr.anter@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
