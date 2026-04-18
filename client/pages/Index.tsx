@@ -5,6 +5,11 @@ import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Download, Briefcas
 import { useEffect, useRef } from "react";
 
 export default function Index() {
+  const assetUrl = (path: string) => {
+    const normalized = path.replace(/^\/+/, "");
+    return `${import.meta.env.BASE_URL}${normalized}`;
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -170,7 +175,7 @@ export default function Index() {
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src="/images/logos/aaib.jpg" alt="AAIB" className="w-full h-full object-contain" />
+                      <img src={assetUrl("images/logos/aaib.jpg")} alt="AAIB" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <CardTitle>Network Security Intern</CardTitle>
@@ -213,7 +218,7 @@ export default function Index() {
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src="/images/logos/orange.png" alt="Orange" className="w-full h-full object-contain" />
+                      <img src={assetUrl("images/logos/orange.png")} alt="Orange" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <CardTitle>Cyber Security Operations Intern</CardTitle>
@@ -255,7 +260,7 @@ export default function Index() {
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src="/images/logos/siemens.png" alt="Siemens" className="w-full h-full object-contain" />
+                      <img src={assetUrl("images/logos/siemens.png")} alt="Siemens" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <CardTitle>Software Engineering Intern</CardTitle>
@@ -297,7 +302,7 @@ export default function Index() {
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 overflow-hidden flex items-center justify-center">
-                      <img src="/images/logos/plastic-bank.jpg" alt="Plastic Bank" className="w-full h-full object-contain" />
+                      <img src={assetUrl("images/logos/plastic-bank.jpg")} alt="Plastic Bank" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <CardTitle>Data Science Intern</CardTitle>
@@ -342,25 +347,25 @@ export default function Index() {
               {
                 name: "CompTIA Security+ (SY0-701)",
                 color: "primary",
-                image: "/images/certs/comptia-securityplus.png",
+                image: "images/certs/comptia-securityplus.png",
                 link: "https://www.credly.com/badges/787476cb-32c2-4710-9f39-2cbb2dc75093/public_url"
               },
               {
                 name: "Google Cybersecurity Professional Certificate",
                 color: "accent",
-                image: "/images/certs/google-cybersecurity.png",
+                image: "images/certs/google-cybersecurity.png",
                 link: "https://www.credly.com/badges/24b2d9b3-2cdb-4dec-b38b-313ba0f20fd8/public_url"
               },
               {
                 name: "Google IT Support Professional Certificate",
                 color: "primary",
-                image: "/images/certs/google-it.png",
+                image: "images/certs/google-it.png",
                 link: "https://www.credly.com/badges/87a8663a-8a9c-4f98-bea0-f9c617864fb7/public_url"
               },
               {
                 name: "AWS Cloud Solutions Architect Professional Certificate",
                 color: "accent",
-                image: "/images/certs/aws.png",
+                image: "images/certs/aws.png",
                 link: "https://coursera.org/share/b90a6b79f6a7e4dc35d1e268e76389f5"
               }
             ].map((cert, idx) => (
@@ -371,7 +376,7 @@ export default function Index() {
                       <div className="w-12 h-12 bg-white/90 rounded-lg flex items-center justify-center group-hover:bg-white transition-all p-1.5 overflow-hidden">
                         {cert.image ? (
                           <img
-                            src={cert.image}
+                            src={cert.image.startsWith("http") ? cert.image : assetUrl(cert.image)}
                             alt={cert.name}
                             className="w-full h-full object-contain"
                           />
