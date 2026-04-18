@@ -45,17 +45,20 @@ export default function Index() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-white/10 shimmer">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-white/10 outline outline-4 outline-red-500">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold gradient-text sparkle">YA</h2>
+            <div className="flex items-center gap-3">
+              <div className="h-5 w-5 bg-red-500" aria-hidden="true" />
+              <h2 className="text-xl font-bold gradient-text sparkle">YA</h2>
+            </div>
             <div className="hidden md:flex items-center gap-6">
-              <button onClick={() => scrollToSection('about')} className="text-sm hover:text-primary transition-all hover:scale-110">About</button>
-              <button onClick={() => scrollToSection('experience')} className="text-sm hover:text-primary transition-all hover:scale-110">Experience</button>
-              <button onClick={() => scrollToSection('certifications')} className="text-sm hover:text-primary transition-all hover:scale-110">Certifications</button>
-              <button onClick={() => scrollToSection('skills')} className="text-sm hover:text-primary transition-all hover:scale-110">Skills</button>
-              <button onClick={() => scrollToSection('projects')} className="text-sm hover:text-primary transition-all hover:scale-110">Projects</button>
-              <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-primary transition-all hover:scale-110">Contact</button>
+              <button onClick={() => scrollToSection('about')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">About</button>
+              <button onClick={() => scrollToSection('experience')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">Experience</button>
+              <button onClick={() => scrollToSection('certifications')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">Certifications</button>
+              <button onClick={() => scrollToSection('skills')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">Projects</button>
+              <button onClick={() => scrollToSection('contact')} className="text-sm px-2 py-1 -mx-2 rounded-md cursor-pointer hover:text-primary transition-all hover:scale-110">Contact</button>
             </div>
           </div>
         </div>
