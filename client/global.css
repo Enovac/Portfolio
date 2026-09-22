@@ -156,6 +156,16 @@
     object-fit: contain;
   }
 
+  /* A logo supplied on its own brand colour fills the plate edge to edge,
+     so no white border shows around it. */
+  .logo-plate-bleed {
+    background: transparent;
+  }
+
+  .logo-plate-bleed img {
+    object-fit: cover;
+  }
+
   /* Scroll-reveal. Starts visible so content is never lost if JS is off. */
   .reveal {
     opacity: 1;

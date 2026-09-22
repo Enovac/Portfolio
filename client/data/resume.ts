@@ -11,6 +11,28 @@ export const SECTIONS = [
   { id: "contact", label: "contact" },
 ] as const;
 
+export const EDUCATION = [
+  {
+    degree: "M.Sc. Cybersecurity",
+    school: "KTH Royal Institute of Technology",
+    place: "Stockholm, Sweden",
+    dates: "2026 — 2028 (expected)",
+    logo: "images/logos/kth.jpg",
+    // The mark sits on its own brand colour rather than a white plate.
+    logoBleed: true,
+    tags: [],
+  },
+  {
+    degree: "B.Sc. Media Engineering and Technology",
+    school: "German International University in Berlin",
+    place: "Computer Science and Engineering (CSEN) track · Berlin, Germany",
+    dates: "2022 — 2026",
+    logo: "images/logos/giu-berlin.jpg",
+    logoBleed: false,
+    tags: ["GPA: A+", "Graduated with Highest Honors"],
+  },
+];
+
 export const EXPERIENCE = [
   {
     company: "Arab African International Bank",
@@ -65,8 +87,7 @@ export const PROJECTS = [
     name: "PhishNet",
     tagline: "AI-based phishing detection platform",
     href: "https://github.com/Enovac/PhishNet",
-    badge: "ML",
-    solid: true,
+    badge: "Security",
     bullets: [
       "Developed a phishing-detection platform using the MERN stack and FastAPI, integrating the Gmail API to analyse email headers, metadata and attachments.",
       "Built a Logistic Regression model with TF-IDF trained on an 80,000-email dataset, supplemented by SPF, DKIM, DMARC and header analysis.",
@@ -78,8 +99,7 @@ export const PROJECTS = [
     name: "Coordinated DRL for Cloud Resource Management",
     tagline: "Hybrid elastic scaling and task scheduling",
     href: "https://github.com/Enovac/DRL-CloudSimPlus-Elastic-Scaling-Scheduling",
-    badge: "IEEE",
-    solid: true,
+    badge: "Research",
     bullets: [
       "Built a discrete-event cloud simulation on CloudSim Plus with a custom staging queue, flavor-based VM model and seed-controlled workload generator, exposed through a Javalin server and FastAPI bridge.",
       "Trained two MaskablePPO agents for elastic scaling and task scheduling through a five-stage pipeline, and evaluated six scaler–scheduler combinations across 1,000 held-out episodes.",
@@ -91,8 +111,7 @@ export const PROJECTS = [
     name: "AES-128 Encryption in x86 Assembly",
     tagline: "Low-level cryptography implementation",
     href: "https://github.com/Enovac/AES-Assembly-Project",
-    badge: "ASM",
-    solid: false,
+    badge: "Cryptography",
     bullets: [
       "Led a four-person team to implement AES-128 from scratch in 16-bit x86 assembly, including key expansion, SubBytes, ShiftRows, MixColumns and AddRoundKey across all 10 rounds.",
       "Implemented GF(2^8) multiplication for MixColumns with modular reduction against the AES polynomial and a 256-byte S-box lookup table.",
@@ -103,8 +122,7 @@ export const PROJECTS = [
     name: "Google Cybersecurity Projects",
     tagline: "Security practice and frameworks",
     href: "https://github.com/Enovac/Google-Cybersecurity-Projects",
-    badge: "LABS",
-    solid: false,
+    badge: "Security",
     bullets: [
       "Practised vulnerability assessments and incident report writing against realistic scenarios.",
       "Applied the AAA framework and NIST Cybersecurity Framework to structure controls and risk documentation.",

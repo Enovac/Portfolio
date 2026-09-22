@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import {
   SECTIONS,
+  EDUCATION,
   EXPERIENCE,
   PROJECTS,
   CERTIFICATIONS,
@@ -411,43 +412,56 @@ export default function Index() {
           <section id="education" className="reveal">
             <SectionHeading index="01" title="Education" />
             <div className="flex flex-col pt-1.5">
-              <article className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-5 border-b border-border">
-                <h3 className="text-base font-semibold tracking-tight">
-                  M.Sc. Cybersecurity
-                </h3>
-                <span className="font-mono text-[12.5px] text-primary">
-                  KTH Royal Institute of Technology
-                </span>
-                <span className="font-mono text-[11.5px] text-muted-foreground ml-auto whitespace-nowrap">
-                  2026 &mdash; 2028 (expected)
-                </span>
-                <p className="w-full text-[13.5px] leading-[1.58] text-muted-foreground">
-                  Stockholm, Sweden
-                </p>
-              </article>
+              {EDUCATION.map((ed, i) => (
+                <article
+                  key={ed.degree}
+                  className={`flex gap-5 py-5 ${
+                    i < EDUCATION.length - 1 ? "border-b border-border" : ""
+                  }`}
+                >
+                  <div
+                    className={`logo-plate w-12 h-12 md:w-14 md:h-14 ${
+                      ed.logoBleed ? "logo-plate-bleed p-0" : "p-1.5"
+                    }`}
+                  >
+                    <img
+                      src={assetUrl(ed.logo)}
+                      alt={`${ed.school} logo`}
+                      loading="lazy"
+                    />
+                  </div>
 
-              <article className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-5">
-                <h3 className="text-base font-semibold tracking-tight">
-                  B.Sc. Media Engineering and Technology
-                </h3>
-                <span className="font-mono text-[12.5px] text-primary">
-                  German International University in Berlin
-                </span>
-                <span className="font-mono text-[11.5px] text-muted-foreground ml-auto whitespace-nowrap">
-                  2022 &mdash; 2026
-                </span>
-                <p className="w-full text-[13.5px] leading-[1.58] text-muted-foreground">
-                  Computer Science and Engineering (CSEN) track &middot; Berlin, Germany
-                </p>
-                <div className="flex flex-wrap gap-1.5 pt-1.5 w-full">
-                  <Tag>GPA: A+</Tag>
-                  <Tag>Graduated with Highest Honors</Tag>
-                </div>
-              </article>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                      <h3 className="text-base font-semibold tracking-tight">
+                        {ed.degree}
+                      </h3>
+                      <span className="font-mono text-[12.5px] text-primary">
+                        {ed.school}
+                      </span>
+                      <span className="font-mono text-[11.5px] text-muted-foreground ml-auto whitespace-nowrap">
+                        {ed.dates}
+                      </span>
+                    </div>
+
+                    <p className="text-[13.5px] leading-[1.58] text-muted-foreground pt-1.5">
+                      {ed.place}
+                    </p>
+
+                    {ed.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 pt-3">
+                        {ed.tags.map((t) => (
+                          <Tag key={t}>{t}</Tag>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </article>
+              ))}
             </div>
           </section>
 
-          {/* ---- Research ---- */}
+          {/* ---- Publications ---- */}
           <section id="publications" className="reveal">
             <SectionHeading index="02" title="Publications" />
             <article className="pt-4">
@@ -598,13 +612,7 @@ export default function Index() {
                         aria-hidden="true"
                       />
                     </a>
-                    <span
-                      className={`font-mono text-[11px] px-2 py-0.5 ${
-                        p.solid
-                          ? "text-background bg-primary"
-                          : "text-foreground border border-[hsl(var(--ink))]"
-                      }`}
-                    >
+                    <span className="font-mono text-[11px] uppercase tracking-wider text-background bg-primary px-2 py-0.5">
                       {p.badge}
                     </span>
                   </div>
