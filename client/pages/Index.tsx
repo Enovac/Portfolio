@@ -50,7 +50,7 @@ function Bullets({ items }: { items: string[] }) {
 
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState<string>("about");
+  const [active, setActive] = useState<string>(SECTIONS[0].id);
   const heroRef = useRef<HTMLElement | null>(null);
   // Set while a click-driven smooth scroll is in flight, so the highlight
   // stays on the clicked section instead of flickering through the ones
@@ -193,7 +193,7 @@ export default function Index() {
           {/* Narrower screens: the full list will not fit, so show a short one. */}
           <div className="hidden md:flex lg:hidden items-center gap-4">
             {SECTIONS.filter((s) =>
-              ["about", "experience", "projects"].includes(s.id),
+              ["education", "experience", "projects"].includes(s.id),
             ).map((s) => (
               <button
                 key={s.id}
@@ -637,7 +637,7 @@ export default function Index() {
           <section id="contact" className="reveal">
             <SectionHeading index="07" title="Contact" />
             <p className="text-[15.5px] leading-relaxed text-foreground/85 pt-4 max-w-2xl">
-              I am open to 2026 opportunities in security engineering,
+              I am open to opportunities in security engineering,
               penetration testing and cloud infrastructure.
             </p>
 
